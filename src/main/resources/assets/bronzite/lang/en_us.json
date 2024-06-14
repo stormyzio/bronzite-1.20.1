@@ -1,6 +1,9 @@
 {
   "item.bronzite.tin_ingot": "Tin Ingot",
   "item.bronzite.raw_tin": "Raw Tin",
+  "item.bronzite.bronze_ingot": "Bronze Ingot",
 
-  "block.bronzite.tin_ore": "Tin Ore"
+  "block.bronzite.deepslate_tin_ore": "Deepslate Tin Ore",
+  "block.bronzite.tin_ore": "Tin Ore",
+  "block.bronzite.bronze_smelter": "Bronze Smelter"
 }

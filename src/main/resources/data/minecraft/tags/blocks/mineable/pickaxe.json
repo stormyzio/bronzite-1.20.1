@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "bronzite:tin_ore"
+    "bronzite:tin_ore",
+    "bronzite:deepslate_tin_ore"
   ]
 }

@@ -16,12 +16,17 @@ import net.minecraft.registry.Registry;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.intprovider.UniformIntProvider;
+import net.stormyz.bronzite.block.custom.BronzeSmelterBlock;
 import net.stormyz.bronzite.item.ModItems;
 
 public class ModBlocks {
 
     public static final Block TIN_ORE = registerBlock("tin_ore",
-            new Block(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).sounds(BlockSoundGroup.AMETHYST_BLOCK)));
+            new Block(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK)));
+    public static final Block DEEPSLATE_TIN_ORE = registerBlock("deepslate_tin_ore",
+            new Block(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK)));
+    public static final Block BRONZE_SMELTER = registerBlock("bronze_smelter",
+            new BronzeSmelterBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).nonOpaque()));
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);
@@ -30,6 +35,7 @@ public class ModBlocks {
 
     private static void addItemsToIngredientItemGroup(FabricItemGroupEntries entries) {
         entries.add(TIN_ORE);
+        entries.add(DEEPSLATE_TIN_ORE);
     }
 
     private static Item registerBlockItem(String name, Block block) {

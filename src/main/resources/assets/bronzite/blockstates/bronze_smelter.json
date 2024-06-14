@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "bronzite:block/bronze_smelter"
+    },
+    "facing=south": {
+      "model": "bronzite:block/bronze_smelter",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "bronzite:block/bronze_smelter",
+      "y": 270
+    },
+    "facing=east": {
+      "model": "bronzite:block/bronze_smelter",
+      "y": 90
+    }
+  }
+}

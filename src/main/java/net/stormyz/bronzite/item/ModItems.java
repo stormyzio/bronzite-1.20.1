@@ -13,10 +13,12 @@ import net.minecraft.util.Identifier;
 public class ModItems {
     public static final Item TIN_INGOT = registerItem("tin_ingot", new Item(new FabricItemSettings()));
     public static final Item RAW_TIN = registerItem("raw_tin", new Item(new FabricItemSettings()));
+    public static final Item BRONZE_INGOT = registerItem("bronze_ingot", new Item(new FabricItemSettings()));
 
     private static void addItemsToIngredientItemGroup(FabricItemGroupEntries entries) {
         entries.add(TIN_INGOT);
         entries.add(RAW_TIN);
+        entries.add(BRONZE_INGOT);
     }
 
     private static Item registerItem(String name, Item item) {
