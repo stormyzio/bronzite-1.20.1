@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "bronzite",
+	"version": "${version}",
+	"name": "Bronzite",
+	"description": "A mod that adds the Bronze Age as well as new structures, dungeons and bosses!",
+	"authors": [
+		"Stormyz"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/bronzite/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.stormyz.bronzite.Bronzite"
+		],
+		"client": [
+			"net.stormyz.bronzite.BronziteClient"
+		],
+		"fabric-datagen": [
+			"net.stormyz.bronzite.BronziteDataGenerator"
+		]
+	},
+	"mixins": [
+		"bronzite.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
